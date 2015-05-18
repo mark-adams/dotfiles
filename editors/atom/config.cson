@@ -1,0 +1,30 @@
+"*":
+  "exception-reporting":
+    userId: "d8ccd476-7728-7965-237e-8697ea1c9e22"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "f8484a553ab176923d240d2fcca1cc4aa18f1f9a"
+  editor:
+    fontFamily: "Source Code Pro"
+    tabLength: 4
+    invisibles:
+      {}
+    fontSize: 18
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  minimap:
+    v4Preview: true
+  "tree-view":
+    {}
+  linter:
+    {}
+  "linter-flake8":
+    {}
+  "autocomplete-plus":
+    {}
+  "atom-terminal":
+    {}
