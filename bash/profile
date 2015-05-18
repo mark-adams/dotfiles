@@ -21,14 +21,23 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# Mac specific options
+export EDITOR=vim
+export WORKON_HOME=~/.venv
+
+# Mac-specific options
 if [ `uname -s` == 'Darwin' ]; then
     PATH="/Users/madams/Library/Python/2.7/bin:$PATH"
 fi
 
-export PATH="./node_modules/.bin:$PATH"
+# Golang-specific things
 export GOROOT=/opt/go
-export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/Projects/go
-export EDITOR=vim
-export WORKON_HOME=~/.venv
+export PATH=$PATH:$GOROOT/bin
+
+# Node-specific things
+export PATH="./node_modules/.bin:$PATH"
+
+# Docker-specific things
+if [ -z "$DOCKER_HOST" ] && type boot2docker > /dev/null 2>&1; then
+    eval "$(boot2docker shellinit 2> /dev/null)"
+fi
