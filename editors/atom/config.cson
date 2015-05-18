@@ -10,8 +10,9 @@
     tabLength: 4
     invisibles:
       {}
-    fontSize: 18
+    fontSize: 14
   core:
+    projectHome: "~/Projects"
     themes: [
       "atom-dark-ui"
       "atom-dark-syntax"

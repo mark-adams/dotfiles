@@ -127,6 +127,9 @@ setup_dotfiles () {
 
     if type "atom" > /dev/null; then
         link_file "`pwd`/editors/atom/config.cson" "$HOME/.atom/config.cson"
+        link_file "`pwd`/editors/atom/keymap.cson" "$HOME/.atom/keymap.cson"
+        link_file "`pwd`/editors/atom/snippets.cson" "$HOME/.atom/snippets.cson"
+
 
         apm starred --user mark-adams --install
     fi
