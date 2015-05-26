@@ -23,6 +23,8 @@ fi
 
 export EDITOR=vim
 export WORKON_HOME=~/.venv
+export PROJECT_HOME=$HOME/Projects
+export ATOM_REPOS_HOME=$PROJECT_HOME
 
 # Mac-specific options
 if [ `uname -s` == 'Darwin' ]; then
@@ -31,7 +33,7 @@ fi
 
 # Golang-specific things
 export GOROOT=/opt/go
-export GOPATH=$HOME/Projects/go
+export GOPATH=$PROJECT_HOME/go
 export PATH=$PATH:$GOROOT/bin
 
 # Node-specific things
