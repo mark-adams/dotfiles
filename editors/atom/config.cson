@@ -19,8 +19,6 @@
     ]
   minimap:
     v4Preview: true
-  "tree-view":
-    {}
   linter:
     {}
   "linter-flake8":
