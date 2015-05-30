@@ -21,25 +21,26 @@ fail () {
   exit
 }
 
-setup_gitconfig () {
-  if ! [ -f git/gitconfig ]
+setup_dvcsconfig () {
+  if ! [ -f git/gitconfig ] || ! [ -f hg/hgrc]
   then
-    info 'setup gitconfig'
+    info 'setup dvcs config'
 
-    git_credential='cache'
+    credential='cache'
     if [ "$(uname -s)" == "Darwin" ]
     then
-      git_credential='osxkeychain'
+      credential='osxkeychain'
     fi
 
-    user ' - What is your Git author name?'
-    read -e git_authorname
-    user ' - What is your Git author email?'
-    read -e git_authoremail
+    user ' - What is your DVCS (git & hg) author name?'
+    read -e authorname
+    user ' - What is your DVCS (git & hg) author email?'
+    read -e authoremail
 
-    sed -e "s/AUTHORNAME/$git_authorname/g" -e "s/AUTHOREMAIL/$git_authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$git_credential/g" git/gitconfig.example > git/gitconfig
+    sed -e "s/AUTHORNAME/$authorname/g" -e "s/AUTHOREMAIL/$authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$credential/g" git/gitconfig.example > git/gitconfig
+    sed -e "s/AUTHORNAME/$authorname/g" -e "s/AUTHOREMAIL/$authoremail/g" -e "s/GIT_CREDENTIAL_HELPER/$credential/g" hg/hgrc.example > hg/hgrc
 
-    success 'gitconfig'
+    success 'dvcs config'
   fi
 }
 
@@ -124,6 +125,8 @@ setup_dotfiles () {
     local overwrite_all=false backup_all=false skip_all=false
 
     link_file "`pwd`/git/gitconfig" "$HOME/.gitconfig"
+    link_file "`pwd`/hg/hgrc" "$HOME/.hgrc"
+
 
     if type "atom" > /dev/null; then
         link_file "`pwd`/editors/atom/config.cson" "$HOME/.atom/config.cson"
@@ -143,5 +146,5 @@ setup_dotfiles () {
     link_file "`pwd`/bash/bashrc" "$HOME/.bashrc"
 }
 
-setup_gitconfig
+setup_dvcsconfig
 setup_dotfiles
