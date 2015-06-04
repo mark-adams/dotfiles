@@ -1,2 +1,9 @@
 [ui]
+style = compact
 username = AUTHORNAME <AUTHOREMAIL>
+
+[extensions]
+shelve=
+color=
+purge=
+record=
