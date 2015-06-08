@@ -143,6 +143,8 @@ setup_dotfiles () {
     link_file "`pwd`/gpg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
 
     link_file "`pwd`/bash/profile" "$HOME/.profile"
+    link_file "`pwd`/bash/aliases" "$HOME/.aliases"
+    link_file "`pwd`/bash/dockerfunc" "$HOME/.dockerfunc"
     link_file "`pwd`/bash/bashrc" "$HOME/.bashrc"
 }
 

@@ -120,3 +120,5 @@ fi
 
 export DEBFULLNAME="Mark Adams"
 export DEBEMAIL="mark@markadams.me"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

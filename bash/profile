@@ -21,6 +21,10 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+for file in ~/.{aliases,dockerfunc}; do
+    [[ -r "$file" ]] && [[ -f "$file" ]] && source "$file"
+done
+
 export EDITOR=vim
 export WORKON_HOME=~/.venv
 export PROJECT_HOME=$HOME/Projects
@@ -43,3 +47,7 @@ export PATH="./node_modules/.bin:$PATH"
 if [ -z "$DOCKER_HOST" ] && type boot2docker > /dev/null 2>&1; then
     eval "$(boot2docker shellinit 2> /dev/null)"
 fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
