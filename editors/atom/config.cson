@@ -8,8 +8,7 @@
   editor:
     fontFamily: "Source Code Pro"
     tabLength: 4
-    invisibles:
-      {}
+    invisibles: {}
     fontSize: 14
   core:
     projectHome: "~/Projects"
@@ -19,15 +18,10 @@
     ]
   minimap:
     v4Preview: true
-  linter:
-    {}
-  "linter-flake8":
-    {}
-  "autocomplete-plus":
-    {}
-  "atom-terminal":
-    {}
+  linter: {}
+  "linter-flake8": {}
+  "autocomplete-plus": {}
+  "atom-terminal": {}
   tabs:
-    {}
-  "tree-view":
-    {}
+    usePreviewTabs: true
+  "tree-view": {}
