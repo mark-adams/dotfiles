@@ -19,10 +19,13 @@
   minimap:
     v4Preview: true
   linter: {}
-  "linter-flake8": {}
+  "linter-flake8":
+    executableDir: "/usr/local/bin"
   "autocomplete-plus": {}
   "atom-terminal": {}
   tabs:
     usePreviewTabs: true
   "tree-view": {}
   "go-plus": {}
+  "atom-beautify":
+    _analyticsUserId: "ac214814-5908-408b-808f-94f635e0f891"

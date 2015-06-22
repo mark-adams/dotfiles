@@ -11,9 +11,14 @@ export DEBFULLNAME="Mark Adams"
 export DEBEMAIL="mark@markadams.me"
 
 export EDITOR=vim
-export WORKON_HOME=~/.venv
 export PROJECT_HOME=$HOME/Projects
 export ATOM_REPOS_HOME=$PROJECT_HOME
+
+# Enable virtualenvwrapper if installed
+if [ -f "/usr/local/bin/virtualenvwrapper.sh" ]; then
+    export WORKON_HOME=~/.venv
+    source "/usr/local/bin/virtualenvwrapper.sh"
+fi
 
 # Mac-specific options
 if [ `uname -s` == 'Darwin' ]; then
