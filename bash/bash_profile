@@ -21,9 +21,9 @@ if [ `uname -s` == 'Darwin' ]; then
 fi
 
 # Golang-specific things
-export GOROOT=/opt/go
+export GOROOT=/usr/lib/go
 export GOPATH=$PROJECT_HOME/go
-export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Node-specific things
 export PATH="./node_modules/.bin:$PATH"
