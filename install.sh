@@ -22,7 +22,7 @@ fail () {
 }
 
 setup_dvcsconfig () {
-  if ! [ -f git/gitconfig ] || ! [ -f hg/hgrc]
+  if [[ !( -f git/gitconfig ) ]] || [[ ! (-f hg/hgrc) ]]
   then
     info 'setup dvcs config'
 
@@ -132,7 +132,7 @@ setup_dotfiles () {
         link_file "`pwd`/editors/atom/config.cson" "$HOME/.atom/config.cson"
         link_file "`pwd`/editors/atom/keymap.cson" "$HOME/.atom/keymap.cson"
         link_file "`pwd`/editors/atom/snippets.cson" "$HOME/.atom/snippets.cson"
-
+        link_file "`pwd`/editors/atom/init.coffee" "$HOME/.atom/init.coffee"
 
         apm starred --user mark-adams --install
     fi
