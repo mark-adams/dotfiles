@@ -9,7 +9,6 @@
     fontFamily: "Source Code Pro"
     tabLength: 4
     invisibles: {}
-    fontSize: 14
   core:
     projectHome: "~/Projects"
     themes: [
@@ -18,7 +17,8 @@
     ]
   minimap:
     v4Preview: true
-  linter: {}
+  linter:
+    showErrorPanel: false
   "linter-flake8":
     executableDir: "/usr/local/bin"
   "autocomplete-plus": {}
@@ -29,3 +29,7 @@
   "go-plus": {}
   "atom-beautify":
     _analyticsUserId: "ac214814-5908-408b-808f-94f635e0f891"
+  "merge-conflicts": {}
+  "vim-mode": {}
+  "linter-scalac":
+    scalacExecutablePath: "/usr/lib/scala/bin/"
