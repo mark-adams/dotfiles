@@ -133,6 +133,7 @@ setup_dotfiles () {
         link_file "`pwd`/editors/atom/keymap.cson" "$HOME/.atom/keymap.cson"
         link_file "`pwd`/editors/atom/snippets.cson" "$HOME/.atom/snippets.cson"
         link_file "`pwd`/editors/atom/init.coffee" "$HOME/.atom/init.coffee"
+        link_file "`pwd`/editors/atom/styles.less" "$HOME/.atom/styles.less"
 
         apm starred --user mark-adams --install
     fi
