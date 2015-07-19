@@ -30,6 +30,9 @@ export GOROOT=/usr/lib/go
 export GOPATH=$PROJECT_HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+# Scala specific things
+export PATH=$PATH:/usr/lib/scala/bin
+
 # Node-specific things
 export PATH="./node_modules/.bin:$PATH"
 
