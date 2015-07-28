@@ -11,10 +11,6 @@
     invisibles: {}
   core:
     projectHome: "~/Projects"
-    themes: [
-      "atom-dark-ui"
-      "monokai"
-    ]
   minimap:
     v4Preview: true
   linter:
@@ -33,3 +29,7 @@
   "vim-mode": {}
   "linter-scalac":
     scalacExecutablePath: "/usr/lib/scala/bin/"
+  "one-dark-ui": {}
+  "fuzzy-finder": {}
+  "git-diff": {}
+  "markdown-preview": {}
