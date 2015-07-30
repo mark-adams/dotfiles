@@ -11,6 +11,10 @@
     invisibles: {}
   core:
     projectHome: "~/Projects"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
   minimap:
     v4Preview: true
   linter:
