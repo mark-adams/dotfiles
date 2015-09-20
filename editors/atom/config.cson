@@ -6,7 +6,7 @@
   metrics:
     userId: "f8484a553ab176923d240d2fcca1cc4aa18f1f9a"
   editor:
-    fontFamily: "Source Code Pro"
+    fontFamily: "Hack"
     tabLength: 4
     invisibles: {}
   core:
@@ -17,8 +17,7 @@
     ]
   minimap:
     v4Preview: true
-  linter:
-    showErrorPanel: false
+  linter: {}
   "linter-flake8":
     executableDir: "/usr/local/bin"
   "autocomplete-plus": {}
@@ -37,3 +36,6 @@
   "fuzzy-finder": {}
   "git-diff": {}
   "markdown-preview": {}
+".coffee.source":
+  editor:
+    tabLength: 2
