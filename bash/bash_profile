@@ -34,6 +34,10 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH=$PATH:/usr/lib/scala/bin
 
 # Node-specific things
+if [ -d "/opt/node" ]; then
+    export PATH="/opt/node/bin:$PATH"
+fi
+
 export PATH="./node_modules/.bin:$PATH"
 
 # Docker-specific things
