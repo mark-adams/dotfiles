@@ -147,6 +147,7 @@ setup_dotfiles () {
     link_file "`pwd`/bash/aliases" "$HOME/.aliases"
     link_file "`pwd`/bash/dockerfunc" "$HOME/.dockerfunc"
     link_file "`pwd`/bash/bashrc" "$HOME/.bashrc"
+    link_file "`pwd`/bash/liquidpromptrc" "$HOME/.config/liquidpromptrc"
 }
 
 setup_dvcsconfig

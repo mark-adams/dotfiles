@@ -109,6 +109,9 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     . /usr/local/bin/virtualenvwrapper.sh
 fi
 
+# Use Liquid prompt if its available
+[[ -d /opt/liquidprompt ]] && [[ $- = *i* ]] && source /opt/liquidprompt/liquidprompt
+
 if [[ -f $HOME/.bash_profile ]]; then
 	source $HOME/.bash_profile
 fi
