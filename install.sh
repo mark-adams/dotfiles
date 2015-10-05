@@ -124,9 +124,27 @@ link_file () {
 setup_dotfiles () {
     local overwrite_all=false backup_all=false skip_all=false
 
+    link_file "`pwd`/editors/vim/vimrc" "$HOME/.vimrc"
+
+    link_file "`pwd`/gpg/gpg.conf" "$HOME/.gnupg/gpg.conf"
+    link_file "`pwd`/gpg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
+
+    # ZSH`
+    link_file "`pwd`/shell/zshrc" "$HOME/.zshrc"
+
+    # Bash
+    link_file "`pwd`/shell/bashrc" "$HOME/.bashrc"
+    link_file "`pwd`/shell/bash_profile" "$HOME/.bash_profile"
+    link_file "`pwd`/shell/liquidpromptrc" "$HOME/.config/liquidpromptrc"
+
+    # Shated shell stuff
+    link_file "`pwd`/shell/aliases" "$HOME/.aliases"
+    link_file "`pwd`/shell/dockerfunc" "$HOME/.dockerfunc"
+    link_file "`pwd`/shell/paths" "$HOME/.paths"
+
+
     link_file "`pwd`/git/gitconfig" "$HOME/.gitconfig"
     link_file "`pwd`/hg/hgrc" "$HOME/.hgrc"
-
 
     if type "atom" > /dev/null; then
         link_file "`pwd`/editors/atom/config.cson" "$HOME/.atom/config.cson"
@@ -137,17 +155,6 @@ setup_dotfiles () {
 
         apm starred --user mark-adams --install
     fi
-
-    link_file "`pwd`/editors/vim/vimrc" "$HOME/.vimrc"
-
-    link_file "`pwd`/gpg/gpg.conf" "$HOME/.gnupg/gpg.conf"
-    link_file "`pwd`/gpg/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
-
-    link_file "`pwd`/bash/bash_profile" "$HOME/.bash_profile"
-    link_file "`pwd`/bash/aliases" "$HOME/.aliases"
-    link_file "`pwd`/bash/dockerfunc" "$HOME/.dockerfunc"
-    link_file "`pwd`/bash/bashrc" "$HOME/.bashrc"
-    link_file "`pwd`/bash/liquidpromptrc" "$HOME/.config/liquidpromptrc"
 }
 
 setup_dvcsconfig

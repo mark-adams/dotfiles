@@ -1,5 +1,3 @@
-#!/bin/bash
-# bash wrappers for docker run commands
 
 # 
 # Helper Functions (borrowed from jfrazelle; Thanks!)
