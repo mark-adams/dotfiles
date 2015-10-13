@@ -16,3 +16,21 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+
+'.source.python':
+  'New BB Test':
+    'prefix': 'newbbtest'
+    'body': """from bitbucket.apps.account.tests.utils import UserProfileTestCaseMixin
+    from bitbucket.apps.test import TestCase
+
+
+    class NewTestCase(UserProfileTestCaseMixin,
+                      TestCase):
+
+        def setUp(self):
+            self.profile = self.create_user_profile()
+
+        def test_not_implemented(self):
+            raise NotImplementedError
+
+    """

@@ -38,7 +38,7 @@ export PATH="./node_modules/.bin:$PATH"
 
 # Docker-specific things
 if [ -z "$DOCKER_HOST" ] && type docker-machine > /dev/null 2>&1; then
-    eval "$(boot2docker shellinit 2> /dev/null)"
+    eval "$(docker-machine env docker-vm 2> /dev/null)"
 fi
 
 # Ruby-specific things

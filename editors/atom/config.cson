@@ -15,17 +15,24 @@
       "one-dark-ui"
       "monokai"
     ]
+    disabledPackages: [
+      "linter-pep8"
+    ]
   minimap:
     v4Preview: true
   linter: {}
   "linter-flake8":
-    executableDir: "/usr/local/bin"
+    ignoreErrorCodes: [
+      "E501"
+      "N802"
+    ]
   "autocomplete-plus": {}
   "atom-terminal": {}
   tabs:
     usePreviewTabs: true
   "tree-view": {}
-  "go-plus": {}
+  "go-plus":
+    goPath: "~/Projects/go"
   "atom-beautify":
     _analyticsUserId: "ac214814-5908-408b-808f-94f635e0f891"
   "merge-conflicts": {}
@@ -36,6 +43,13 @@
   "fuzzy-finder": {}
   "git-diff": {}
   "markdown-preview": {}
-".coffee.source":
+  "":
+    coffee:
+      source:
+        editor:
+          tabLength: 2
+  "open-on-bitbucket":
+    cloudUrlOverride: "git-staging@staging.bitbucket.org"
+".basic.html.text":
   editor:
     tabLength: 2
