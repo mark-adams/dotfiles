@@ -54,8 +54,8 @@ plugins=(git mercurial golang emoji docker jsontools sudo httpie python pip
 
 # User configuration
 
-for file in ~/.{aliases,docker,paths}; do
-    [[ -r "$file" ]] && [[ -f "$file" ]] && source "$file"
+for file in ~/.{aliases,dockerfunc,paths}; do
+    [[ -r "$file" ]] && [[ -a "$file" ]] && source "$file"
 done
 # export MANPATH="/usr/local/man:$MANPATH"
 
