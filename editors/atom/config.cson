@@ -1,55 +1,55 @@
 "*":
-  "exception-reporting":
-    userId: "d8ccd476-7728-7965-237e-8697ea1c9e22"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "f8484a553ab176923d240d2fcca1cc4aa18f1f9a"
-  editor:
-    fontFamily: "Hack"
-    tabLength: 4
-    invisibles: {}
+  "":
+    coffee:
+      source:
+        editor:
+          tabLength: 2
+  "atom-beautify":
+    _analyticsUserId: "ac214814-5908-408b-808f-94f635e0f891"
+  "atom-terminal": {}
+  "autocomplete-plus": {}
   core:
+    disabledPackages: [
+      "linter-pep8"
+    ]
     projectHome: "~/Projects"
     themes: [
       "one-dark-ui"
       "monokai"
     ]
-    disabledPackages: [
-      "linter-pep8"
-    ]
-  minimap:
-    v4Preview: true
+  editor:
+    fontFamily: "Hack"
+    invisibles: {}
+    tabLength: 4
+  "exception-reporting":
+    userId: "d8ccd476-7728-7965-237e-8697ea1c9e22"
+  "fuzzy-finder": {}
+  "git-diff": {}
+  "go-plus":
+    goPath: "~/Projects/go"
   linter: {}
   "linter-flake8":
     ignoreErrorCodes: [
       "E501"
       "N802"
     ]
-  "autocomplete-plus": {}
-  "atom-terminal": {}
+  "linter-scalac":
+    scalacExecutablePath: "/usr/lib/scala/bin/"
+  "markdown-preview": {}
+  "merge-conflicts": {}
+  metrics:
+    userId: "f8484a553ab176923d240d2fcca1cc4aa18f1f9a"
+  minimap:
+    v4Preview: true
+  "one-dark-ui": {}
+  "open-on-bitbucket":
+    cloudUrlOverride: "git-staging@staging.bitbucket.org"
   tabs:
     usePreviewTabs: true
   "tree-view": {}
-  "go-plus":
-    goPath: "~/Projects/go"
-  "atom-beautify":
-    _analyticsUserId: "ac214814-5908-408b-808f-94f635e0f891"
-  "merge-conflicts": {}
   "vim-mode": {}
-  "linter-scalac":
-    scalacExecutablePath: "/usr/lib/scala/bin/"
-  "one-dark-ui": {}
-  "fuzzy-finder": {}
-  "git-diff": {}
-  "markdown-preview": {}
-  "":
-    coffee:
-      source:
-        editor:
-          tabLength: 2
-  "open-on-bitbucket":
-    cloudUrlOverride: "git-staging@staging.bitbucket.org"
+  welcome:
+    showOnStartup: false
 ".basic.html.text":
   editor:
     tabLength: 2
