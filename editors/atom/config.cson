@@ -9,9 +9,6 @@
   "atom-terminal": {}
   "autocomplete-plus": {}
   core:
-    disabledPackages: [
-      "linter-pep8"
-    ]
     projectHome: "~/Projects"
     themes: [
       "one-dark-ui"
@@ -51,5 +48,8 @@
   welcome:
     showOnStartup: false
 ".basic.html.text":
+  editor:
+    tabLength: 2
+".html.jinja.text":
   editor:
     tabLength: 2

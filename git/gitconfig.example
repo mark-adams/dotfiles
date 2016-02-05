@@ -65,3 +65,6 @@
 [user]
     name = AUTHORNAME
     email = AUTHOREMAIL
+
+[core]
+    excludesfile = ~/Projects/dotfiles/git/.gitignore_global
