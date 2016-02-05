@@ -40,7 +40,7 @@
     v4Preview: true
   "one-dark-ui": {}
   "open-on-bitbucket":
-    cloudUrlOverride: "git-staging@staging.bitbucket.org"
+    cloudUrlOverride: "git-staging@staging.bb-inf.net"
   tabs:
     usePreviewTabs: true
   "tree-view": {}
