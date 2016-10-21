@@ -22,7 +22,7 @@ if [[ `uname -s` == 'Darwin' ]]; then
 fi
 
 # Golang-specific things
-export GOPATH=$PROJECT_HOME/go
+export GOPATH=~
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # Scala specific things
