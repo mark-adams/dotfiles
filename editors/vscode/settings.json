@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "Hack",
+    "editor.fontSize": 14,
+
+    "go.lintTool": "gometalinter",
+    "go.lintFlags": ["--fast"],
+
+    "python.linting.flake8Enabled": true,
+    "editor.renderIndentGuides": true,
+    "files.trimTrailingWhitespace": true
+}
