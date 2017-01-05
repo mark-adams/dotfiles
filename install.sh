@@ -155,6 +155,10 @@ setup_dotfiles () {
 
         apm starred --user mark-adams --install
     fi
+
+    if type "code" > /dev/null; then
+      link_file "`pwd`/editors/vscode/settings.json" "$HOME/.config/Code/User/settings.json"
+    fi
 }
 
 setup_dvcsconfig
