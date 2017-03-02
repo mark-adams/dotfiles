@@ -2,14 +2,16 @@
 {
     "editor.fontFamily": "Hack",
     "editor.fontSize": 14,
-
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
     "go.lintTool": "gometalinter",
-    "go.lintFlags": ["--fast"],
+    "go.lintFlags": ["--fast", "-D", "gas"],
 
     "python.linting.flake8Enabled": true,
     "python.linting.pylintEnabled": false,
     "editor.renderIndentGuides": true,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "javascript.validate.enable": false
+    "javascript.validate.enable": false,
+    "window.zoomLevel": 1
 }
