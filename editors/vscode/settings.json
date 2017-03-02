@@ -13,5 +13,6 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "javascript.validate.enable": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "terminal.integrated.scrollback": 10000
 }
