@@ -1,7 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "Hack",
+    "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
+    "editor.fontLigatures": true,
     "editor.minimap.enabled": true,
     "editor.minimap.renderCharacters": false,
     "go.lintTool": "gometalinter",
@@ -14,5 +15,50 @@
     "files.insertFinalNewline": true,
     "javascript.validate.enable": false,
     "terminal.integrated.scrollback": 10000,
-    "search.useIgnoreFilesByDefault": true
+    "search.useIgnoreFilesByDefault": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.jediEnabled": false,
+    "window.zoomLevel": 0,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "yaml.schemas": {
+        "file:///Users/madams/.vscode/extensions/atlassian.atlascode-2.6.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.jqlList": [
+        {
+            "id": "c40920bc-71c9-428c-9380-669a951e98ed",
+            "enabled": true,
+            "monitor": true,
+            "name": "My Issues",
+            "query": "assignee=currentUser() and project=currentProject() and resolution = Unresolved and statusCategory != Done",
+            "siteId": "a436116f-02ce-4520-8fbb-7301462a1674"
+        },
+        {
+            "id": "8e527ffd-f5f0-42af-bd93-21d236902529",
+            "enabled": true,
+            "monitor": true,
+            "name": "Open Issues",
+            "query": "assignee in (EMPTY) and project=currentProject() and resolution = Unresolved and statusCategory != Done order by lastViewed DESC",
+            "siteId": "a436116f-02ce-4520-8fbb-7301462a1674"
+        }
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.renderWhitespace": "none",
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.languageServer": "Microsoft"
 }
